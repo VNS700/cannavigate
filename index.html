@@ -15,6 +15,15 @@
       <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
       <script src="https://statics.teams.cdn.office.net/sdk/v1.6.0/js/MicrosoftTeams.min.js"></script>
       <script>
+        microsoftTeams.settings.registerOnSaveHandler((saveEvent) => {
+        microsoftTeams.settings.setSettings({
+        suggestedDisplayName: "My First Tab",
+        entityId: "Test",
+        contentUrl: "https://sardait.com/customTeamApp/index.html",
+        websiteUrl: "https://sardait.com/customTeamApp/index.html",
+      });
+      saveEvent.notifySuccess();
+    });
        microsoftTeams.initialize();
        microsoftTeams.settings.setValidityState(true);
       </script>
