@@ -6,7 +6,7 @@
   </head>
   <body>
 
-    <h2>Test-3</h2>
+    <h2>Test-4</h2>
     
       <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     
@@ -15,13 +15,13 @@
       <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
       <script src="https://statics.teams.cdn.office.net/sdk/v1.6.0/js/MicrosoftTeams.min.js"></script>
       <script>
-       microsoftTeams.initialize();
+        microsoftTeams.initialize();
         microsoftTeams.settings.registerOnSaveHandler((saveEvent) => {
         microsoftTeams.settings.setSettings({
         suggestedDisplayName: "My Tab",
         entityId: "Test",
-        contentUrl: baseUrl + "https://sardait.com/customTeamApp/index.html",
-        websiteUrl: baseUrl + "https://sardait.com/customTeamApp/index.html",
+        contentUrl: "https://sardait.com/customTeamApp/index.html",
+        websiteUrl: "https://sardait.com/customTeamApp/index.html",
       });
        microsoftTeams.settings.setValidityState(true);
       </script>
