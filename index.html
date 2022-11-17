@@ -8,6 +8,13 @@
     <title>Title: PyScript</title>
 </head>
 <body>
-	<py-script> print("Hello, World!") </py-script>
+	<script>
+		let url  = `https://fiftytwo-store-dev.myshopify.com/cart/35477584904359:1`;
+
+let response = await fetch(cartCheckoutURL, {
+   method: 'GET',
+});
+console.log('response', response);
+	</script>
 </body>
 </html>
